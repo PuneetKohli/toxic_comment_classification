@@ -1,2 +1,4 @@
 fix_permission.sh
 #dataset/
+.DS_Store
+.ipynb_checkpoints/
