@@ -30,7 +30,7 @@ def train_model(train, train_x, labels, write_filename=None):
 def get_preds_from_model(model, test_x, labels):
     preds = np.zeros((test_x.shape[0], len(labels)))
     for i,j in enumerate(labels):
-        weights, m = model.values()[i]
+        weights, m = list(model.values())[i]
         preds[:,i] = m.predict_proba(test_x.multiply(weights))[:,1]
     return preds
 
