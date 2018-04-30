@@ -3,3 +3,4 @@ fix_permission.sh
 .DS_Store
 .ipynb_checkpoints/
 embeddings/
+*.out
